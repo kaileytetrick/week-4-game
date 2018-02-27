@@ -33,7 +33,7 @@ $(document).ready(function () {
   }
 
   function loser() {
-    alert("You lose!");
+    alert("You lose! Quit monkey'in around and try again");
     losses++;
     $('#numberLosses').text(losses);
     reset()
