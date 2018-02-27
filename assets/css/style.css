@@ -1,0 +1,65 @@
+html{
+	background-image: url("../images/jungle.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+div{
+	background-color: white;
+	margin: 10px;
+	width: 25%;
+}
+@font-face {
+    font-family: "jungle";
+	src: url(/assets/jungle.ttf);
+}
+h1, h3, span{
+	font-weight: bold;
+	text-align: center;
+	font-family: "jungle";
+}
+h1{
+	font-size: 30pt;
+}
+ol{
+	list-style: decimal inside; 
+}
+ul {
+	list-style: disc inside;
+	text-indent: 20px;
+}
+div.header, div.bananaBox{
+	background-color: #e0e0eb;
+}
+div.header, div.instructions{
+	width: 50%;
+}
+.numberToMatch, .winsAndLosses{
+	float: left;
+	width: 15%;
+	height: 60px;
+}
+.userTotal{
+	width: 15%;
+	height: 60px;
+}
+.bananaBox{
+	clear: both;
+}
+.bananas{
+	height: 60px;
+	margin: 10px;
+}
+#blueBanana{
+	color: rgb(72, 72, 232);
+}
+#greenBanana{
+	color: green;
+}
+#pinkBanana{
+	color: rgb(238, 108, 130);
+}
+#yellowBanana{
+	color: rgba(255, 235, 20, 0.961);
+}
