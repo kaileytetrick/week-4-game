@@ -4,57 +4,73 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Feed the Monkey!</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 	<div class="header">
 		<h1>Feed the Monkey!</h1>
 	</div>
 	<div class="instructions">
-		<h3>How to Play</h3>
-		</br>
+		<h3>How to Play:</h3>
 		<ol>
 			<li>You will be given a random number at the start of the game.</li>
-			<li>There are four types of bananas below:</li>
-			<ul>
-				<li id="blueBanana">Blue Banana</li>
-				<li id="greenBanana">Green Banana</li>
-				<li id="pinkBanana">Pink Banana</li>
-				<li id="yellowBanana">Yellow Banana</li>
-			</ul>
-			<li>By clicking on one of the bananas, you will add a specific amount of points to your total score.</li>
-			<li>If you match your total score to the random number, you win and the monkey gets fed!</li>
-			<li>If your total score goes above the random number, you lose and the monkey doesn't get any bananas.</li>
-			<li>The value of each banana is hidden from you until you click on it.</li>
-			<li>Each time the game starts, the value of the each banana will change.</li>
+			<br/>
+			<li>There are four types of bananas below:</ul>
+				<br/>
+				<ul>
+				<br/>
+					<li id="blueBanana">Blue Banana</li>
+					<li id="greenBanana">Green Banana</li>
+					<li id="pinkBanana">Pink Banana</li>
+					<li id="yellowBanana">Yellow Banana</li>
+				</ul>
+				<br/>
+				<li>By clicking on one of the bananas, you will add a specific amount of points to your total score.</li>
+				<br/>
+				<li>If you match your total score to the random number, you win and the monkey gets fed!</li>
+				<br/>
+				<li>If your total score goes above the random number, you lose and the monkey doesn't get any bananas.</li>
+				<br/>
+				<li>The value of each banana is hidden from you until you click on it.</li>
+				<br/>
+				<li>Each time the game starts, the value of the each banana will change.</li>
 		</ol>
 	</div>
-	<div class="numberToMatch">
-		<h2>Number To Get:
-			<span id= "randomNumber"></span>
-		</h2>
-	</div>
-	<div class="winsAndLosses">
-		<h2>Wins:
-			<span id= "numberWins"></span>
-			</br>
-			Losses: 
-			<span id= "numberLosses"></span>
-		</h2>
-	</div>
-	<div class="bananaBox">
-		<img src="assets/images/bban.jpg" class=bananas id="one" alt="Blue Banana">
-		<img src="assets/images/green-banana.jpg" class=bananas id="two" alt="Green Banana">
-		<img src="assets/images/pinkbanana.jpg" class=bananas id= "three" alt="Pink Banana">
-		<img src="assets/images/yban.jpg" class=bananas id= "four" alt="Yellow Banana">
-	</div>
-	<div class="userTotal">
-		<h2>Your total score is:
-			<span id="finalTotal"></span>
-		</h2>
+
+	<div class="gameDiv">
+		<div class="monkey">
+			<img src="assets/images/mwb.png" class="monkies" alt="Monkey">
+		</div>
+		<div class="numberToMatch">
+			<h2>Number To Get:
+				<span id="randomNumber"></span>
+			</h2>
+		</div>
+		<div class="userTotal">
+			<h2>Your Total Score:
+				<span id="finalTotal"></span>
+			</h2>
+		</div>
+		<div class="bananaBox">
+			<img src="assets/images/bban.jpg" class="bananas" id="one" alt="Blue Banana">
+			<img src="assets/images/green-banana.jpg" class="bananas" id="two" alt="Green Banana">
+			<img src="assets/images/pinkbanana.jpg" class="bananas" id="three" alt="Pink Banana">
+			<img src="assets/images/yban.jpg" class="bananas" id="four" alt="Yellow Banana">
+		</div>
+		<div class="winsAndLosses">
+				<h2>Wins:
+					<span id="numberWins"></span>
+					<br/>
+					Losses:
+					<span id="numberLosses"></span>
+				</h2>
+			</div>
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>

@@ -2,54 +2,54 @@ html{
 	background-image: url("../images/jungle.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
 }
-div{
-	background-color: white;
-	margin: 10px;
-	width: 25%;
-}
-@font-face {
-    font-family: "jungle";
-	src: url(/assets/jungle.ttf);
-}
-h1, h3, span{
-	font-weight: bold;
-	text-align: center;
-	font-family: "jungle";
+body {
+	font-family: 'Kranky', cursive;
+	color: rgb(241, 230, 65);
+	font-size: 20px;
 }
 h1{
-	font-size: 30pt;
+	font-family: 'Frijole', cursive;
+	font-size: 40pt;
+	text-align: center;
+	margin-bottom: 0;
 }
-ol{
-	list-style: decimal inside; 
+h3 {
+	margin-top: 0;
+	font-size: 30px;
 }
-ul {
-	list-style: disc inside;
-	text-indent: 20px;
-}
-div.header, div.bananaBox{
-	background-color: #e0e0eb;
-}
-div.header, div.instructions{
+.instructions{
+	margin: 20px;
+	line-height: 18px;
 	width: 50%;
 }
-.numberToMatch, .winsAndLosses{
+.instructions, .gameDiv {
 	float: left;
-	width: 15%;
-	height: 60px;
 }
-.userTotal{
-	width: 15%;
-	height: 60px;
+.gameDiv {
+	position: absolute;
+	right: 0px;
+	width: 45%;
+	font-size: 15px;
+	text-align: center;
+}
+.monkies {
+	width: 60%;
+	height: auto;
 }
 .bananaBox{
 	clear: both;
+	width: 100%;
 }
 .bananas{
 	height: 60px;
-	margin: 10px;
+	width: 100px;
+	margin: 5px;
+}
+.numberToMatch, .userTotal{
+	width: 100%;
+	line-height: 10px;
+
 }
 #blueBanana{
 	color: rgb(72, 72, 232);
@@ -61,5 +61,5 @@ div.header, div.instructions{
 	color: rgb(238, 108, 130);
 }
 #yellowBanana{
-	color: rgba(255, 235, 20, 0.961);
+	color: rgba(187, 172, 6, 0.961);
 }
